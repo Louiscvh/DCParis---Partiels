@@ -1,0 +1,27 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin : 0 auto;
+    font-family: 'Poppins', sans-serif;
+    img {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+        animation: spin 5000ms infinite linear;
+    }
+}
+
+
+
+//Animation for the wheel
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

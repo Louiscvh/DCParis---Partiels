@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Exo2</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Nom" id="input__name">
+            <select name="" id="input__genre">
+                <option value="">Genre</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+            <input type="number" placeholder="Age" id="input__age">
+            <button class="addPlayer">Ajouter le joueur</button>
+            <div class="players__container"></div>
+        </section>
+        <section>
+            <h2>Filtre</h2>
+            <label for="filter">Enlever les prénoms avec plus de 5 lettres
+                <input id="filter" type="checkbox">
+            </label>
+        </section>
+        <br>
+        <button onclick='start()'>Lancer le tirage au sort</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="./images/roue.png" alt="">
+        <h1 class="result"></h1>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
