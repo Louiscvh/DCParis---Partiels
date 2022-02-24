@@ -177,7 +177,10 @@ main .card:hover .card__back {
 }
 
 .modal {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -197,11 +200,26 @@ main .card:hover .card__back {
   width: 80%;
 }
 
-.modal p {
+.modal h2, .modal p {
   color: #FFF;
+}
+
+.modal h2 {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal h2:hover {
+  opacity: 0.5;
 }
 
 .modal img {
   height: 100%;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=index.css.map */
